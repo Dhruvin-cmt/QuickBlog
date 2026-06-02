@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch dist/server.js",
-    "start": "tsx dist/server.js",
+    "start": "node dist/server.js",
     "build": "tsc",
     "typecheck": "tsc --noEmit"
   },
