@@ -28,7 +28,7 @@ export default function Button({
     <button
       type={type}
       onClick={onClick}
-      className={`${baseStyle} ${styles[variant]} ${className}`}
+      className={`${baseStyle} ${variant ? styles[variant] : ""} ${className}`}
       disabled={disabled}
     >
       {children ?? label}
