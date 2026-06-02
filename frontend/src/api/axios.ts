@@ -11,7 +11,7 @@ type FailedRequest = {
   originalRequest: AxiosRequestConfig;
 };
 
-const BASE_URL = "http://localhost:5000/api/v1";
+export const BASE_URL = "https://quickblog-nqxv.onrender.com/api/v1";
 
 let isRefreshing = false;
 let failedQueue : FailedRequest[] = [];
@@ -58,7 +58,7 @@ api.interceptors.response.use(
       try {
         isRefreshing = true;
         const response = await axios.post(
-          "http://localhost:5000/api/v1/auth/refresh",
+          `${BASE_URL}/api/v1/auth/refresh`,
           {},
           { withCredentials: true }
         );

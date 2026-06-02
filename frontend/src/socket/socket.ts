@@ -1,5 +1,6 @@
 import { io } from "socket.io-client";
+import { BASE_URL } from "../api/axios";
 
-export const socket = io("http://localhost:5000", {
+export const socket = io(`${BASE_URL}`, {
   autoConnect: false,
 });
