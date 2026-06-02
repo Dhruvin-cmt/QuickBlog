@@ -3,7 +3,7 @@ import { Plus, Eye, FileText, EyeOff, Pencil, Trash2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { myBlogs, removeBlog, updateblog } from "../api/blog";
 import Button from "../ui/Button";
-import { CategoryMeta } from "../../../shared/category";
+import { CategoryMeta } from "../shared/category";
 import { showError, showSuccess } from "../utils/toast";
 import type { blogType } from "../types/blogtype";
 import AuthorDashboardSkeleton from "../components/skeletons/AuthorDashboardSkeleton";

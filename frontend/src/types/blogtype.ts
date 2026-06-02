@@ -3,7 +3,7 @@ import type {
   publishBlogValidation,
   updateBlogValidation,
 } from "../validations/blogSchema";
-import type { CategoryMeta } from "../../../shared/category";
+import type { CategoryMeta } from "../shared/category";
 
 export type publishBlogData = z.infer<typeof publishBlogValidation>;
 export type updateBlogData = z.infer<typeof updateBlogValidation>;

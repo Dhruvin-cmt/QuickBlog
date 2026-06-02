@@ -3,7 +3,7 @@ import {
   Category,
   CategoryMeta,
   type CategoryType,
-} from "../../../../../shared/category";
+} from "../../../shared/category";
 import Button from "../../../ui/Button";
 
 export default function CategorySelect({

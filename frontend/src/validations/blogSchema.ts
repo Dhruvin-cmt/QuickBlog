@@ -1,5 +1,5 @@
 import z from "zod";
-import { Category} from "../../../shared/category";
+import { Category} from "../shared/category";
 
 export type EditorNode = {
   type: string;

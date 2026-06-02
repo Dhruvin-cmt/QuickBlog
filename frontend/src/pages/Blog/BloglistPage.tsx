@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { formattedDate } from "../../utils/formatDate";
 import { extractText } from "../../utils/extractText";
-import { Category, CategoryMeta } from "../../../../shared/category";
+import { Category, CategoryMeta } from "../../shared/category";
 import Button from "../../ui/Button";
 import FullScreenLoader from "../../components/ScreenLoader";
 import Footer from "../../layout/Footer";

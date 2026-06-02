@@ -4,7 +4,7 @@ import { fetchBlogById } from "../../api/blog";
 import { useNavigate, useParams } from "react-router-dom";
 import { formattedDate } from "../../utils/formatDate";
 import BlogView from "../../components/Blog/BlogView";
-import { CategoryMeta } from "../../../../shared/category";
+import { CategoryMeta } from "../../shared/category";
 import FullScreenLoader from "../../components/ScreenLoader";
 import Footer from "../../layout/Footer";
 import BlogNotFound from "../../components/Blog/BlogNotFound";
