@@ -59,7 +59,20 @@ export default function AuthorDashboard() {
   const handlePublish = async (id: string, status: boolean) => {
     try {
       await updateblog({ isPublished: !status }, id);
-      fetchMyBlogs();
+      setUserBlogs((prev) => {
+        if (!prev) return null;
+
+        return prev.map((blog) => {
+          if (blog.postId === id) {
+            return {
+              ...blog,
+              isPublished: !status,
+            };
+          }
+
+          return blog;
+        });
+      });
     } catch (error) {
       showError(getErrorMessage(error));
     }

@@ -104,9 +104,7 @@ export const authorBlogs = async (id: string, page: number, limit: number) => {
       where: { authorId: id, isDeleted: false },
       skip: (page - 1) * limit,
       take: limit,
-      orderBy: {
-        createdAt: "desc",
-      },
+      orderBy: [{ updatedAt: "desc" }, { postId: "desc" }],
     }),
     prisma.post.count({
       where: { authorId: id, isDeleted: false },
