@@ -11,7 +11,7 @@ import { Role } from "./types/authtype";
 import { useEffect } from "react";
 import { socket } from "./socket/socket";
 import BloglistPage from "./pages/Blog/BloglistPage";
-import SingleBlogPage from "./pages/Blog/BlogPage";
+import BlogPage from "./pages/Blog/BlogPage";
 
 export default function App() {
 
@@ -39,7 +39,7 @@ export default function App() {
             }
           />
           <Route path="/blogs" element={<BloglistPage />} />
-          <Route path="/blog/:id" element={<SingleBlogPage />} />
+          <Route path="/blog/:id" element={<BlogPage />} />
           <Route
             path="/blog/publish"
             element={
