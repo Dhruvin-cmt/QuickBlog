@@ -16,7 +16,7 @@ import type { comment, commentResponse } from "../../types/commenttype";
 import { getErrorMessage } from "../../utils/getErrorMessage";
 import type { blogType } from "../../types/blogtype";
 
-export default function SingleBlogPage() {
+export default function BlogPage() {
   const { id } = useParams();
   const navigate = useNavigate();
 

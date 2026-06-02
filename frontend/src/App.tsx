@@ -11,7 +11,7 @@ import { Role } from "./types/authtype";
 import { useEffect } from "react";
 import { socket } from "./socket/socket";
 import BloglistPage from "./pages/Blog/BloglistPage";
-import SingleBlogPage from "./pages/Blog/SingleBlogPage";
+import SingleBlogPage from "./pages/Blog/BlogPage";
 
 export default function App() {
 
