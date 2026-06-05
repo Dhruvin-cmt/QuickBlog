@@ -11,7 +11,7 @@ type FailedRequest = {
   originalRequest: AxiosRequestConfig;
 };
 
-export const BASE_URL = "https://quickblog-nqxv.onrender.com/api/v1";
+export const BASE_URL = "http://65.0.95.204/api/v1";
 
 let isRefreshing = false;
 let failedQueue : FailedRequest[] = [];
